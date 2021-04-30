@@ -46,7 +46,8 @@ jobs:
                 "COMMIT_SHA": "${{ github.sha }}"
               }
             }
-
+        - name : Acceptance Test
+          run : curl http://bookinfo.dev.opsta.net/student33/ratings/health | grep "Ratings is working"
       # - run: docker build -t ghcr.io/aot25922/bookinfo-ratings:dev .
       # - run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
       # - run: docker push ghcr.io/aot25922/bookinfo-ratings:dev
