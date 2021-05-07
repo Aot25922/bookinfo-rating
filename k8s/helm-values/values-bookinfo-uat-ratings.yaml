@@ -1,3 +1,4 @@
+
 ratings:
   namespace: student33-bookinfo-uat
   image: ghcr.io/aot25922/bookinfo-ratings
